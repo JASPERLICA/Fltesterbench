@@ -1,0 +1,26 @@
+from django.db import models
+
+# Create your models here.
+class FLtester(models.Model):
+    id = models.AutoField('序号', primary_key=True)
+    # name = models.CharField('名称', max_length=64)
+    date = models.DateField('日期')
+    time = models.TimeField('时间')
+    Vot_50 = models.DecimalField(max_digits=4, decimal_places=2)
+    Vot_24 = models.DecimalField(max_digits=4, decimal_places=2)
+    Vot_5 = models.DecimalField(max_digits=4, decimal_places=2)
+    Vot_3 = models.DecimalField(max_digits=4, decimal_places=2)
+    photo1 = models.BooleanField()
+    photo2 = models.BooleanField()
+    Triger_3D = models.BooleanField()
+    Vot_load1 = models.DecimalField(max_digits=4, decimal_places=2)
+    Vot_load2 = models.DecimalField(max_digits=4, decimal_places=2)
+    Vot_laser1 = models.DecimalField(max_digits=4, decimal_places=2)
+    Vot_laser2 = models.DecimalField(max_digits=4, decimal_places=2)
+    Triger_laser1 = models.BooleanField()
+    Triger_laser2 = models.BooleanField()
+    GPIO_0 = models.BooleanField()
+    GPIO_1 = models.BooleanField()
+    GPIO_2 = models.BooleanField()
+    GPIO_3 = models.BooleanField()
+    GPIO_4 = models.BooleanField()
